@@ -16,6 +16,6 @@ public class RemoveController extends Controller{
     void removeWord(ActionEvent event) {
         String a = removetext.getText();
         SqlReader.deleteDb(newDic1, a);
-        Platform.exit();
+        //Platform.exit();
     }
 }

@@ -9,13 +9,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <Pane prefHeight="400.0" prefWidth="600.0">
          <children>
-            <Separator layoutX="247.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="0.0" />
-            <TextField fx:id="Enter" onKeyPressed="#init" prefHeight="31.0" prefWidth="161.0" promptText="Enter the word here" />
+            <Separator layoutX="247.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="11.0" style="-fx-background-color: #090480;" />
+            <TextField fx:id="Enter" onKeyPressed="#init" prefHeight="31.0" prefWidth="161.0" promptText="Enter the word here" style="-fx-background-color: #fec0ca;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
             <Button layoutX="161.0" mnemonicParsing="false" onAction="#EnterWord" prefHeight="31.0" prefWidth="88.0" text="Enter">
                <graphic>
                   <ImageView fitHeight="20" fitWidth="20" layoutX="58.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
@@ -25,8 +29,8 @@
                   </ImageView>
                </graphic>
             </Button>
-            <VBox fx:id="vbox" layoutX="250.0" layoutY="34.0" prefHeight="368.0" prefWidth="354.0" />
-            <ListView fx:id="listView" layoutY="31.0" onMousePressed="#mouseClickEvents" prefHeight="200.0" prefWidth="250.0" />
+            <VBox fx:id="vbox" layoutX="257.0" layoutY="39.0" prefHeight="361.0" prefWidth="341.0" style="-fx-background-color: #fec0ca;" />
+            <ListView fx:id="listView" layoutY="31.0" onMousePressed="#mouseClickEvents" prefHeight="200.0" prefWidth="247.0" style="-fx-background-color: #87cefc;" />
             <Button fx:id="addButton" layoutX="347.0" mnemonicParsing="false" onAction="#newAddWindow" prefHeight="31.0" prefWidth="65.0" text="Add">
                <graphic>
                   <ImageView fitHeight="20" fitWidth="20" layoutX="58.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
@@ -54,12 +58,20 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Separator layoutX="250.0" layoutY="32.0" prefHeight="2.0" prefWidth="348.0" />
-            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="185.0" layoutX="55.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+            <Separator layoutX="250.0" layoutY="32.0" prefHeight="9.0" prefWidth="348.0" style="-fx-background-color: #090480;" />
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="161.0" layoutX="51.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="https://img.icons8.com/plasticine/452/google-translate-new-logo.png?fbclid=IwAR1ImLdcwruc3dj1vqLLX_akvcmvgdooJdG0XEIdT-_j3t9bHMGbhqxWI5s" />
                </image></ImageView>
-            <Button layoutX="500.0" mnemonicParsing="false" onAction="#repairWindow" prefHeight="31.0" prefWidth="97.0" text="Repair" />
+            <Button layoutX="500.0" mnemonicParsing="false" onAction="#repairWindow" prefHeight="31.0" prefWidth="97.0" text="Repair">
+               <graphic>
+                  <ImageView fitHeight="20" fitWidth="20" layoutX="58.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://i.imgur.com/1ygIMV6.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </Pane>
    </children>
