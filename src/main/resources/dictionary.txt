@@ -1,0 +1,10 @@
+Dictionary	Tu dien
+Team	Doi
+Viewer	Nguoi xem
+Discovery	Tim kiem, kham pha
+Steam	Hoi nuoc
+Evolution	Tien hoa
+League	Lien minh
+Legend	Huyen Thoai
+Download	tai ve
+music	Nhac
