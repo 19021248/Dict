@@ -54,6 +54,7 @@ public class DictionaryManagement {
         return "Not Found";
     }
 
+
     static String dicLookup(String s){
         for(Word tu : Dictionary.word_list){
             if(s.equals(tu.getWord_target())){

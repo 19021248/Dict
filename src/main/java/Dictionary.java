@@ -41,6 +41,24 @@ public class Dictionary {
         }
         return result;
     }
+    public static String dictionarylookup(String findWord) {
+        int left = 0;
+        int right = word_list.size()-1;
+        while(left <= right) {
+            int mid = (left + right)/2;
+            int res = findWord.compareToIgnoreCase(word_list.get(mid).getWord_target());
+            if(res == 0) {
+                return word_list.get(mid).getWord_explain();
+            }
+            else if(res > 0) {
+                left = mid + 1;
+            }
+            else {
+                right = mid - 1;
+            }
+        }
+        return "Not Found";
+    }
 
 
 }
