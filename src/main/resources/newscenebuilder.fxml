@@ -10,14 +10,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Accordion?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <Pane prefHeight="400.0" prefWidth="600.0">
          <children>
             <Separator layoutX="247.0" orientation="VERTICAL" prefHeight="401.0" prefWidth="0.0" />
             <TextField fx:id="Enter" onKeyPressed="#init" prefHeight="31.0" prefWidth="161.0" promptText="Enter the word here" />
-            <Button layoutX="161.0" mnemonicParsing="false" onAction="#EnterWord" prefHeight="31.0" prefWidth="88.0" text="Enter" >
+            <Button layoutX="161.0" mnemonicParsing="false" onAction="#EnterWord" prefHeight="31.0" prefWidth="88.0" text="Enter">
                <graphic>
                   <ImageView fitHeight="20" fitWidth="20" layoutX="58.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -28,7 +27,7 @@
             </Button>
             <VBox fx:id="vbox" layoutX="250.0" layoutY="34.0" prefHeight="368.0" prefWidth="354.0" />
             <ListView fx:id="listView" layoutY="31.0" onMousePressed="#mouseClickEvents" prefHeight="200.0" prefWidth="250.0" />
-            <Button fx:id="addButton" layoutX="371.0" mnemonicParsing="false" onAction="#newAddWindow" prefHeight="31.0" prefWidth="113.0" text="Add" >
+            <Button fx:id="addButton" layoutX="347.0" mnemonicParsing="false" onAction="#newAddWindow" prefHeight="31.0" prefWidth="65.0" text="Add">
                <graphic>
                   <ImageView fitHeight="20" fitWidth="20" layoutX="58.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -37,7 +36,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="484.0" mnemonicParsing="false" onAction="#removeWindow" prefHeight="31.0" prefWidth="113.0" text="Remove" >
+            <Button layoutX="412.0" mnemonicParsing="false" onAction="#removeWindow" prefHeight="31.0" prefWidth="88.0" text="Remove">
                <graphic>
                   <ImageView fitHeight="20" fitWidth="20" layoutX="58.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -46,7 +45,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="SoundButton" layoutX="250.0" mnemonicParsing="false" onAction="#mouseClickOnSoundButton" prefHeight="31.0" prefWidth="120.0" text="SoundOn" >
+            <Button fx:id="SoundButton" layoutX="250.0" mnemonicParsing="false" onAction="#mouseClickOnSoundButton" prefHeight="31.0" prefWidth="97.0" text="SoundOn">
                <graphic>
                   <ImageView fitHeight="20" fitWidth="20" layoutX="58.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -60,6 +59,7 @@
                <image>
                   <Image url="https://img.icons8.com/plasticine/452/google-translate-new-logo.png?fbclid=IwAR1ImLdcwruc3dj1vqLLX_akvcmvgdooJdG0XEIdT-_j3t9bHMGbhqxWI5s" />
                </image></ImageView>
+            <Button layoutX="500.0" mnemonicParsing="false" onAction="#repairWindow" prefHeight="31.0" prefWidth="97.0" text="Repair" />
          </children>
       </Pane>
    </children>

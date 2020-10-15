@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RepairController">
+   <children>
+      <Button fx:id="repairConfirmButton" layoutX="193.0" layoutY="150.0" mnemonicParsing="false" onAction="#repairWord" text="Confirm" />
+      <TextField fx:id="repairWord" layoutX="132.0" layoutY="53.0" prefHeight="25.0" prefWidth="173.0" promptText="Enter the word being repaired" />
+      <TextField fx:id="repairMeaning" layoutX="132.0" layoutY="96.0" prefHeight="25.0" prefWidth="173.0" promptText="Enter the word's meaning" />
+   </children>
+</AnchorPane>

@@ -104,6 +104,33 @@ public class SqlReader {
 
 
     }
+    public static void Repair(String wT,String wE, Dictionary d){
+        String sql = "DELETE FROM av WHERE word = ?";
+        String sql1 = " INSERT INTO av (word, description) VALUES ('"+wT+"','"+wE+"')";
+
+        try {
+            String url = "jdbc:sqlite:C:/sqlite/dict_hh.db";
+            Connection conn = DriverManager.getConnection(url);
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+
+
+                // set the corresponding param
+                pstmt.setString(1, wT);
+                // execute the delete statement
+                pstmt.executeUpdate();
+                d.removeWord(wT);
+                Statement stmt = conn.createStatement();
+                stmt.executeUpdate(sql1);
+                d.addWord(wT,wE);
+
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+
+
+    }
 
 
 

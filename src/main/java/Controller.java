@@ -19,6 +19,7 @@ import java.util.ArrayList;
 public class Controller {
     public Stage stage1 = new Stage();
     public Stage stage2 = new Stage();
+    public Stage stage3 = new Stage();
     public DictionaryApplication art;
     @FXML
     public TextField addtext;
@@ -119,6 +120,17 @@ public class Controller {
             stage2.setScene(new Scene(root1));
             stage2.setTitle("Remove Window");
             stage2.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public void repairWindow(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/repair.fxml"));
+            Parent root1 = fxmlLoader.load();
+            stage3.setScene(new Scene(root1));
+            stage3.setTitle("Repair Window");
+            stage3.show();
         } catch(Exception e) {
             e.printStackTrace();
         }
